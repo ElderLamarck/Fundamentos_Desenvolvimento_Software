@@ -3,8 +3,8 @@ Trabalho realizado como requisito para obtenção da nota na disciplina de Funda
 
 Alunos:
 - Lorenzo Mazzuli Marcelino
-- Elder Lamarck
-- Diego Moura
-- Flávio Vieira
+- Elder Lamarck Gomes Ramos
+- Diego Oliveira Vilaça de Moura
+- Flávio Vieira de Albuquerque Filho
 - Jorge Henrique de Carvalho Camara
 - Pedro Eunísio Vieira de Souza 
