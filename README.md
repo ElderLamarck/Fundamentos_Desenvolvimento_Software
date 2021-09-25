@@ -1,4 +1,4 @@
-# Fundamentos_Desenvolvimento_Software
+# PEople
 Trabalho realizado como requisito para obtenção da nota na disciplina de Fundamentos de Desenvolvimento de Software
 
 Alunos:
