@@ -3,6 +3,7 @@
 #include <stdlib.h>
 
 char user_input[];
+int key = 1;
 
 int main(void)
 {
@@ -19,7 +20,7 @@ int main(void)
 		gets(user_input);
 
 		if (strcmp(user_input, "assuntos") == 0) {
-			while (strcmp(user_input, "musicas") != 0 || strcmp(user_input, "esportes") != 0) {
+			while (key != 0) {
 				printf("\nEscolha um dos assuntos:\n");
 				printf("musicas\n");
 				printf("esportes\n");
@@ -27,12 +28,12 @@ int main(void)
 				gets(user_input);
 				if (strcmp(user_input, "musicas") == 0){
 					system("start https://tvpe.tv/?s=musicas&post_type=post");
-
+					break;
 				}
 				else if (strcmp(user_input, "esportes") == 0){
 					system("start https://tvpe.tv/?s=esportes&post_type=post");
-				}
-				else{
+					break;
+				}else{
 					printf("não entendi, poderia repetir o comando?");
 				}
 			}
@@ -46,8 +47,8 @@ int main(void)
 			printf("Twitter - https://twitter.com/tvpe\n");
 			printf("Youtube - https://www.youtube.com/tvpernambuco\n");
 			printf("Instagram - https://www.instagram.com/tvpernambuco/\n");
-		} else {
-			printf("\nnão entendi, poderia repetir o comando?\n");
+		}else{
+			printf("\nnao entendi, poderia repetir o comando?\n");
 		}
 	}
 	printf("bye bye\n");
