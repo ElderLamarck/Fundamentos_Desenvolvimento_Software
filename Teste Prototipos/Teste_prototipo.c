@@ -50,5 +50,5 @@ int main(void)
 			printf("\nnão entendi, poderia repetir o comando?\n");
 		}
 	}
-	printf("até logo\n");
+	printf("bye bye\n");
 }
