@@ -52,4 +52,5 @@ int main(void)
 		}
 	}
 	printf("ate logo\n");
+	return 0;
 }
