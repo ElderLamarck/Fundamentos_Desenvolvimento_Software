@@ -1,5 +1,5 @@
 # PEople
-Trabalho realizado como requisito para obtenção da nota na disciplina de Fundamentos de Desenvolvimento de Software
+Trabalho realizado como requisito para obtenção da nota na disciplina de Projetos2.
 
 Alunos de CC:
 - Lorenzo Mazzuli Marcelino
@@ -15,5 +15,13 @@ Alunos de Design:
 - Matteo Gomes de Siqueira 
 - Micaela Krolls
 
+
 ## Sobre o projeto
 Estamos fazendo um projeto que se baseia em levantar uma problemática e investigar uma solução. No nosso caso, a problemática foi levantada à partir de um cliente, que é a TVPE, e nosso projeto está se direcionando pra agir sobre a plataforma web da emissora de tv e as suas redes sociais.
+
+
+### Como visualizar o programa:
+- Caso não possua o flask em sua maquina execute "pip install Flask".
+- Abra o CMD e vá até o diretorio do projeto e execute "venv\Scripts\activate".
+- Por fim execute "flask run".
+- No terminal copie o link http que aparecerá, será algo semelhante a "http://127.0.0.1:5000".
