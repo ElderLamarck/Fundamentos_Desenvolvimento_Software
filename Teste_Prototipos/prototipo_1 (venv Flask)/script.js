@@ -4,9 +4,9 @@ $(document).ready(function(){
         $(".chat_on").hide(300);
     });
     
-       $(".chat_close_icon").click(function(){
+    $(".chat_close_icon").click(function(){
         $(".Layout").hide();
-           $(".chat_on").show(300);
+        $(".chat_on").show(300);
     });
     
 });
