@@ -39,7 +39,6 @@ int main(void)
 				printf("\nEscolha um dos assuntos:\n");
 				printf("musicas\n");
 				printf("esportes\n");
-				clear();
 
 				gets(user_input);
 				if (strcmp(user_input, "musicas") == 0)
