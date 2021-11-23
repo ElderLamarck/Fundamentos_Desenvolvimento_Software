@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-clear(void)
+int clear(void)
 {
 	printf("\e[1;1H\e[2J");
 }
@@ -53,9 +53,7 @@ int main(void)
 					system("start https://tvpe.tv/coluna-esporte/");
 					clear();
 					break;
-				}
-				else
-				{
+				} else {
 					printf("\nnao entendi, poderia repetir o comando?\n");
 				}
 			}
