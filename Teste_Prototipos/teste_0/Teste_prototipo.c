@@ -2,55 +2,69 @@
 #include <string.h>
 #include <stdlib.h>
 
+clear(void){
+	printf("\e[1;1H\e[2J");
+}
+
+FILE* file;
 char user_input[];
-int key = 1;
 
 int main(void)
 {
-	printf("bem-vindo ao Bot teste\n");
-	printf("vim ajudar a procurar locais no site\n");
+	printf("\nOla, eu sou o Buco!\n");
+	printf("Como posso te ajudar hoje?\n");
 
-	while (strcmp(user_input, "sair") != 0) {
+	while (strcmp(user_input, "0") != 0) {
 		printf("\nComandos disponiveis:\n");
-		printf("assuntos\n");
-		printf("feedback\n");
-		printf("redes sociais\n");
-		printf("sair\n");
+		printf("1 - Abrir area comercial\n");
+		printf("2 - Notificar assuntos de interesse\n");
+		printf("3 - Enviar feedback/sugestoes\n");
+		printf("0 - sair\n");
 
 		gets(user_input);
 
-		if (strcmp(user_input, "assuntos") == 0) {
-			while (key != 0) {
+		if (strcmp(user_input, "1") == 0){
+			printf("pode deixar!\n");
+			system("start https://tvpe.tv/area-comercial/");
+			clear();
+		}
+		
+		else if (strcmp(user_input, "2") == 0) {
+			while (strcmp(user_input, "musicas") != 0 || strcmp(user_input, "esportes") != 0) {
 				printf("\nEscolha um dos assuntos:\n");
 				printf("musicas\n");
 				printf("esportes\n");
+				clear();
 
 				gets(user_input);
 				if (strcmp(user_input, "musicas") == 0){
-					system("start https://tvpe.tv/?s=musicas&post_type=post");
+					system("start https://tvpe.tv/somzeira/");
+					clear();
 					break;
 				}
 				else if (strcmp(user_input, "esportes") == 0){
-					system("start https://tvpe.tv/?s=esportes&post_type=post");
+					system("start https://tvpe.tv/coluna-esporte/");
+					clear();
 					break;
 				}else{
-					printf("não entendi, poderia repetir o comando?");
+					printf("\nnao entendi, poderia repetir o comando?\n");
 				}
 			}
 		}
-		else if (strcmp(user_input, "feedback") == 0) {
-			printf("Nos informe seu feedback!\n");
-			gets(user_input);
-		}
-		else if (strcmp(user_input, "redes sociais") == 0) {
-			printf("\nFacebook - https://www.facebook.com/tvpernambuco\n");
-			printf("Twitter - https://twitter.com/tvpe\n");
-			printf("Youtube - https://www.youtube.com/tvpernambuco\n");
-			printf("Instagram - https://www.instagram.com/tvpernambuco/\n");
-		}else{
-			printf("\nnao entendi, poderia repetir o comando?\n");
+		else if (strcmp(user_input, "3") == 0) {
+			file = fopen("feedback/feedback_sugest.txt", "a");
+			if(file == NULL){
+        		printf("nao foi possivel abrir o arquivo\n");
+    		} else {
+				printf("Nos informe seu feedback!\n");
+				gets(user_input);
+				fprintf(file, "%s\n", user_input);
+				fclose(file);
+				clear();
+			}
 		}
 	}
+	clear();
 	printf("ate logo\n");
 	return 0;
 }
