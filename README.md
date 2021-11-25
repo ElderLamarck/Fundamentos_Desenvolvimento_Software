@@ -27,4 +27,4 @@ Estamos fazendo um projeto que se baseia em levantar uma problemática e investi
 - No terminal copie o link http que aparecerá, será algo semelhante a "http://127.0.0.1:5000".
 
 ### Programa em C:
-- Existem alguns comandos no código que apenas são executados usando Shell, e por essa razão não funcionam se forem rodados em maquinas com linux, por exemplo a funcionalidade "1  Abrir area comercial" e "2 - Notificar assuntos de interesse". 
+- Existem alguns comandos no código que apenas são executados usando Shell, e por essa razão não funcionam se forem rodados em maquinas com linux, por exemplo as funcionalidades "1 - Abrir area comercial" e "2 - Notificar assuntos de interesse". 
