@@ -20,8 +20,11 @@ Alunos de Design:
 Estamos fazendo um projeto que se baseia em levantar uma problemática e investigar uma solução. No nosso caso, a problemática foi levantada à partir de um cliente, que é a TVPE, e nosso projeto está se direcionando pra agir sobre a plataforma web da emissora de tv e as suas redes sociais.
 
 
-### Como visualizar o programa:
+### Como visualizar o programa (aplicação web):
 - Caso não possua o flask em sua maquina execute "pip install Flask".
 - Abra o CMD e vá até o diretorio do projeto e execute "venv\Scripts\activate".
 - Por fim execute "flask run".
 - No terminal copie o link http que aparecerá, será algo semelhante a "http://127.0.0.1:5000".
+
+### Programa em C:
+- Existem alguns comandos no código que apenas são executados usando Shell, e por essa razão não funcionam se forem rodados em maquinas com linux, por exemplo a funcionalidade "1  Abrir area comercial" e "2 - Notificar assuntos de interesse". 
