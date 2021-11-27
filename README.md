@@ -21,10 +21,11 @@ Estamos fazendo um projeto que se baseia em levantar uma problemática e investi
 
 
 ### Como visualizar o programa (aplicação web):
-- Caso não possua o flask em sua maquina execute "pip install Flask".
+- Caso não possua o Python em sua máquina acesse esse site para fazer o download -> https://www.python.org/downloads/
+- Caso não possua o framework flask em sua máquina execute no seu terminal "pip install Flask".
 - Abra o CMD e vá até o diretorio do projeto e execute "venv\Scripts\activate".
 - Por fim execute "flask run".
 - No terminal copie o link http que aparecerá, será algo semelhante a "http://127.0.0.1:5000".
 
 ### Programa em C:
-- Existem alguns comandos no código que apenas são executados usando Shell, e por essa razão não funcionam se forem rodados em maquinas com linux, por exemplo as funcionalidades "1 - Abrir area comercial" e "2 - Notificar assuntos de interesse". 
+- Existem alguns comandos no código que apenas são executados usando Shell, e por essa razão não funcionam se forem rodados em máquinas com linux, por exemplo as funcionalidades "1 - Abrir area comercial" e "2 - Notificar assuntos de interesse". 
